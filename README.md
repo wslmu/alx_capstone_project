@@ -1,9 +1,8 @@
-Toggle navigation
+
 Curriculum
 Introduction to SWE
 Average: 92.3%
 Project badge
-0%
 Preparation for Capstone Project
 Portfolio project
  Amateur
@@ -107,7 +106,7 @@ Repo:
 GitHub repository: alx_capstone_project
 File: README.md
  
-0/3 pts
+1.95/3 pts
 1. Workflow for Your Project
 mandatory
 Design an Easy-to-Understand Workflow:
@@ -141,10 +140,12 @@ GitHub repository: alx_capstone_project
 0/1 pt
 Score
 Project badge
-0%
-Your score will be updated once you launch the project review.
+Still some tasks to work on!
 
-Please review all the tasks before you start the peer review.
+Now that you are ready to be reviewed, share your link to your peers. You can find some here.
+
+https://intranet.alxswe.com/corrections/20797948/correct	
+Don't forget to review one of them.
 
 Previous project
 Copyright © 2024 ALX, All rights reserved.
