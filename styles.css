@@ -1,0 +1,89 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* white */
+    color: #333333; /* dark grey */
+}
+
+/* Header styles */
+header {
+    background-color: #f3e5f5; /* light purple */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333; /* dark grey */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #9c27b0; /* purple */
+}
+
+/* Section styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    color: #9c27b0; /* purple */
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Skills section styles */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-icon {
+    width: 80px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Projects section styles */
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    color: #e91e63; /* pink */
+}
+
+.project a {
+    text-decoration: none;
+    color: #9c27b0; /* purple */
+}
+
+.project a:hover {
+    color: #e91e63; /* pink */
+}
