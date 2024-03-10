@@ -133,8 +133,8 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-inbox"></i>moujanniwissal@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>+212 6 99 82 34 45</p>
+                <p><i class="fa-solid fa-inbox"></i>wissal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+212 0 00 00 00 00</p>
                 <div class="social-icons">
                     <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
@@ -157,7 +157,7 @@
         <i class="fa-solid fa-chevron-up"></i>
         </a>
     <div class="copyright">
-        <p>Copyright @ Wissal Moujanni</p>
+        <p>Copyright @Wissal</p>
     </div>
 </div>
 <script>
@@ -202,18 +202,8 @@
      }else{
          totop.classList.remove("active");
      }
-    })
-   </script>
-   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlFSdWiYhb-2ZSbFNGBZg6S7xB3pyM4FPpmYvoaEqMJ5X6nV17W6OBdErmpj_SepfzFQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    });
+ </script>
+ 
 </body>
 </html>
