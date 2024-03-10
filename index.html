@@ -3,62 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Personal Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b724cf1cc5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+    <link rel="stylesheet" href="WeatherApp.html">
+    <link rel="stylesheet" href="Techium.html">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+   <div id="header">
+    <div class="container">
+        <nav> 
+            <img src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <img src="images/sun.png" id="icon">
         </nav>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a beginner in the software engineering world, currently studying at EMSI Morocco. My skills include HTML, CSS, JavaScript, Python, C, C++, MySQL, Linux, and PHP.</p>
+        <div class="header-text">
+            <p>Software Developper</p>
+            <h1>Hello, I'm <span>Wissal <br> Moujanni </span>From <br>Morocco.</h1>
         </div>
-    </section>
-
-    <section id="skills">
+    </div>
+   </div>
+   <div id="about">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-icons">
-                <!-- Icons will be added here dynamically -->
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! I'm Wissal, a passionate coder with a love for exploring the ever-evolving world of IT,
+                         from AI to robotics. Pursuing software engineering was a natural choice for me - it's a dynamic field that keeps me engaged and inspired. 
+                         Constantly striving to enhance my skills, I aim to become a top-notch developer and contribute to innovative projects.
+                          With a strong work ethic and a knack for leadership, I thrive in both collaborative environments and solo pursuits.
+                           Always eager to stay ahead of the curve, I'm committed to pushing boundaries and delivering cutting-edge solutions. <br> 
+                    </p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+             </div>
+             <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    
+                    <li><span>Website Developpment js, html, css</span><br>styling and developping web applications </li>
+                    <li><span>Professionnal Experience</span><br>Internship at ONSSA, Morocco</li>
+
+                  
+                </ul>
+             </div>
+             <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021-2026</span><br>Moroccan University Of Engineering Sciences 'EMSI'</li>
+                    <li><span>2022-2024</span><br>Online Certifications Coursera </li>
+                    <li><span>2024</span><br>Intro To Software Engineering With ALX</li>
+                </ul>
+             </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Hospital Management Project</h3>
-                <p>This project manages the operations of a hospital.</p>
-                <a href="link-to-code" target="_blank">View Code</a>
+   </div>
+<div id="Skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skill-list">
+            <div>
+                <i style="font-size: 50px;"class="fa-solid fa-code"></i>
+                <h2>Front End Web Dev</h2>
+                    <p>
+                        
+                        <li><i class="fa-brands fa-html5"></i>  HTML </li>
+                        <li><i class="fa-brands fa-css3-alt"></i>  CSS </li>
+                        <li><i class="fa-brands fa-js"></i>  JAVASCRIPT</li>
+                    </p>
             </div>
-            <div class="project">
-                <h3>Other Projects</h3>
-                <p>Other simple projects available on my GitHub.</p>
-                <a href="link-to-github" target="_blank">GitHub</a>
+            <div>
+                <i style="font-size: 50px;"class="fa-solid fa-code-branch"></i>
+                <h2>Back End Web Dev</h2>
+                    <p>                                      
+                       <li><i class="fa-solid fa-code"></i>  SQL/ORACLE</li>                       
+                       <li><i class="fa-brands fa-dev"></i>  C/C++ </li>                
+                       <li><i class="fa-brands fa-php"></i>  PHP </li>
+                    </p>
+            </div>
+            <div>
+                <i style="font-size: 50px;"class="fa-solid fa-book"></i>
+                <h2> Other Skills </h2>
+                    <p>                    
+                        <li><i class="fa-regular fa-image"></i>  Adobe Photoshop </li>                       
+                        <li><i class="fa-regular fa-file-excel"></i>  Microsoft Excel</li> 
+                    </p>
+            </div>
+        </div>  
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Techium</h3>
+                    <p>A simple website using these technologies, html and css. This website does the managment of a digital company called Techium.</p>
+                    <a href="https://wslmu.github.io/alx_html_css/flexbox/7-index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Stay informed about the weather anywhere with our intuitive JavaScript-powered app. Get accurate forecasts, humidity percentage and wind speed for any location with ease.</p>
+                    <a href="https://wslmu.github.io/WeatherApp" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: your-email@example.com</p>
-            <p>Github: <a href="link-to-github" target="_blank">GitHub</a></p>
-            <p>Discord: YourDiscordID</p>
+        <a href="#" class="btn">See More </a>
+    </div>
+</div>  
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i>moujanniwissal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+212 6 99 82 34 45</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="images/Wissal Moujanni CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>       
         </div>
-    </section>
-
-    <script src="script.js"></script>
+    </div>
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    <div class="copyright">
+        <p>Copyright @ Wissal Moujanni</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+    for(tablink of tablinks)
+    {
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+   var sidemenu = document.getElementById("sidemenu");
+   function openmenu(){
+    sidemenu.style.right = "0";
+   }
+   function closemenu(){
+    sidemenu.style.right = "-200px";
+   }
+   var icon = document.getElementById("icon");
+   icon.onclick = function()
+   {
+         document.body.classList.toggle("dark-theme");
+         if(document.body.classList.contains("dark-theme"))
+            {
+                icon.src ="images/moon.png";
+             }
+             else{
+                icon.src = "images/sun.png";
+             }
+   }
+   const totop = document.querySelector(".to-top");
+    window.addEventListener("scroll",() => {
+    if(window.pageYOffset > 100)
+     {
+         totop.classList.add("active");
+     }else{
+         totop.classList.remove("active");
+     }
+    })
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlFSdWiYhb-2ZSbFNGBZg6S7xB3pyM4FPpmYvoaEqMJ5X6nV17W6OBdErmpj_SepfzFQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
